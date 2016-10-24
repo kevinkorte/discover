@@ -1,0 +1,47 @@
+.modal-content {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.modal-backdrop.in {
+  opacity: .8;
+}
+.modal-body label {
+  color: #fff;
+}
+.modal-header,
+.modal-footer {
+  border-bottom: none;
+  border-top: none;
+}
+.close {
+  color: #fff;
+  text-shadow: none;
+  opacity: .7;
+}
+.video-wrapper {
+  background: #fff;
+  border-radius: 6px;
+}
+.video-wrapper-padding {
+  display: flex;
+  padding: 12px;
+
+  & .video-details {
+    padding-left: 12px;
+  }
+}
+.btn-new {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.video-details {
+  flex-grow: 1;
+}
+.video-thumbnail {
+  flex-basis: 180px;
+}
+.vw-api-thumb {
+  width: 100%;
+  height: auto;
+}

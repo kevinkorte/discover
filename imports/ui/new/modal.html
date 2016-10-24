@@ -1,0 +1,37 @@
+<template name="modal">
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="youtubeUrl">Paste a YouTube url</label>
+          <input type="email" class="form-control input-lg" id="youtubeUrl" placeholder="YouTube URL">
+        </div>
+        {{#if video}}
+          <div class="video-wrapper animated fadeIn">
+            <div class="video-wrapper-padding">
+              <div class="video-thumbnail">
+                <img width="180" class="vw-api-thumb" src="{{video.thumbnails.medium.url}}">
+              </div>
+              <div class="video-details">
+                <h4 class="video-title">{{video.title}}</h4>
+                <span>{{video.channelTitle}}</span> &bull;
+                <span class="publishedAt">Posted {{publishedAgo video.publishedAt}}</span>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-success btn-new btn-block" value="Submit" />
+          </div>
+        {{/if}}
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+</template>
