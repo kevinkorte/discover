@@ -6,6 +6,7 @@ import '../../../node_modules/animate.css/animate.min.css';
 import '../../ui/layouts/mainLayout.html';
 import '../../ui/navigation/navigation.js';
 import '../../ui/new/modal.js';
+import '../../ui/accounts/signup.js';
 
 Template.body.onCreated(function() {
   console.log('head is here');

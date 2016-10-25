@@ -5,3 +5,9 @@ FlowRouter.route('/', {
         BlazeLayout.render("mainLayout", {area: "navigation"});
     }
 });
+
+FlowRouter.route('/signup', {
+    action: function(params) {
+        BlazeLayout.render("signup");
+    }
+});
